@@ -12,17 +12,16 @@ Tein moduulin, jolla voin asentaa puhtaalle linuxille sovelluksia, joita käytä
 
 Aloitin projektin tekemällä salttiin moduulille kansion. Tein kansioon init.sls tiedoston, johon myöhemmin laitan kaiken tavaran. Aloitin asentamalla firefoxin käsin, jotta voisin kopioida konfigurointitiedoston, johon voin muuttaa oletussivun duckduckgo.com. Aloitin init.sls tiedoston täyttämisen asentamalla ensin firefoxin ja muutaman hyötyohjelman, joita tulen käyttämään myöhemmin. Laitoin myös tarvittavan koodin, jotta saan file.managedin toimimaan. Laitoin tässä vaiheessa sls tiedostoon seuraavan koodin.
 
-  tools:
-    pkg.installed:
-      - pkgs:
-        - curl
-        - firefox
-        - tree
-        - git
-    
-  /etc/firefox/syspref.js:
-    file.managed:
-      - source: salt://projekti/syspref.js
+	tools:
+	  pkg.installed:
+	    - pkgs:
+       	      - curl
+   	      - firefox
+              - tree
+              - git
+	/etc/firefox/syspref.js:
+  	  file.managed:
+ 	    - source: salt://projekti/syspref.js
 
 ![kuva1](/images/kuva1)
 
@@ -36,24 +35,23 @@ Seuraavaksi asensin Blenderin ensin käsin, jotta voin muokata sen haluamakseni 
 
 Kun olin muuttanut asetuksia käytin find komentoa löytääkseni muutetut asetustiedostot komennolla: "find -printf '%T+ %p\n'|sort|tail". Kopioin konfigurointitiedoston salttiin, jonka jälkeen poistin blenderin. Tein sls tiedostoon muutoksia lisäämällä sinne blenderin asennuksen ja konfigurointitiedostoa varten file.managedin. init.sls tiedoston sisältö:
 
-  tools:
-    pkg.installed:
-      - pkgs:
-        - curl
-        - firefox
-        - tree
-        - git
-    
-  /etc/firefox/syspref.js:
-    file.managed:
-      - source: salt://projekti/syspref.js
+	tools:
+	  pkg.installed:
+	    - pkgs:
+	    - curl
+	    - firefox
+	    - tree
+	    - git
+	/etc/firefox/syspref.js:
+	  file.managed:
+	    - source: salt://projekti/syspref.js
+
+	blender:
+	  pkg.installed
   
-  blender:
-    pkg.installed
-  
-  /etc/skel/userpref.blend:
-    file.managed:
-      - source: salt://projekti/userpref.blend
+	/etc/skel/userpref.blend:
+	  file.managed:
+	    - source: salt://projekti/userpref.blend
   
 
 
