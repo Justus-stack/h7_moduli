@@ -63,4 +63,4 @@ Steamin asennus.
 
 Koko moduulin testaus uudella koneella.
 
--tehtävä on hieman kesken, mutta saan sen valmiiksi ennen torstain tuntia-
+-tehtävä on hieman kesken, mutta saan sen valmiiksi ennen torstain tuntia- -kuvat ja pari osaa puuttuu-
