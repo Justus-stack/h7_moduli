@@ -8,7 +8,7 @@
 
 Tein moduulin, jolla voin asentaa puhtaalle linuxille sovelluksia, joita käytän itse usein. Moduuli asentaa Firefoxin, Discordin, Steamin, ufw, Runescapen ja Blenderin. Ajattelin, että tästä projektista olisi hyötyä myöhemmin, jos päätän asentaa linux desktopin uudelleen. 
 
-![SLS TIEDOSTON SISÄLTÖ](/images/kuva1)
+![SLS TIEDOSTON SISÄLTÖ](/images/kuva1.png)
 
 Aloitin projektin tekemällä salttiin moduulille kansion. Tein kansioon init.sls tiedoston, johon myöhemmin laitan kaiken tavaran. Aloitin asentamalla firefoxin käsin, jotta voisin kopioida konfigurointitiedoston, johon voin muuttaa oletussivun duckduckgo.com. Aloitin init.sls tiedoston täyttämisen asentamalla ensin firefoxin ja muutaman hyötyohjelman, joita tulen käyttämään myöhemmin. Laitoin myös tarvittavan koodin, jotta saan file.managedin toimimaan. Laitoin tässä vaiheessa sls tiedostoon seuraavan koodin.
 
@@ -23,15 +23,15 @@ Aloitin projektin tekemällä salttiin moduulille kansion. Tein kansioon init.sl
   	  file.managed:
  	    - source: salt://projekti/syspref.js
 
-![kuva1](/images/kuva1)
+![kuva2](/images/kuva2.png)
 
 Tässä vaiheessa kaikki toimi moitteetta. Testasin avata firefoxin ja duckduckgo.com aukesi niin kuin pitikin. 
 
-![kuva1](/images/kuva1)
+![kuva1](/images/kuva3.png)
 
 Seuraavaksi asensin Blenderin ensin käsin, jotta voin muokata sen haluamakseni ja ottaa siitä tarvittavat konfigurointitiedostot. Asensin sen sudo apt install blender ja avasin sen. Vaihdoin taustaa tummemmaksi, koska se on minun mielestäni mukavampi. 
 
-![kuva3](images/kuva3)
+![kuva3](images/kuva4.png)
 
 Kun olin muuttanut asetuksia käytin find komentoa löytääkseni muutetut asetustiedostot komennolla: "find -printf '%T+ %p\n'|sort|tail". Kopioin konfigurointitiedoston salttiin, jonka jälkeen poistin blenderin. Tein sls tiedostoon muutoksia lisäämällä sinne blenderin asennuksen ja konfigurointitiedostoa varten file.managedin. init.sls tiedoston sisältö:
 
@@ -52,6 +52,15 @@ Kun olin muuttanut asetuksia käytin find komentoa löytääkseni muutetut asetu
 	/etc/skel/userpref.blend:
 	  file.managed:
 	    - source: salt://projekti/userpref.blend
-  
+	    
+Discordin asennus.
 
+![kuva4](/images/kuva5.png)
 
+Steamin asennus.
+
+[kuva5](/images/kuva6.png)
+
+Koko moduulin testaus uudella koneella.
+
+-tehtävä on hieman kesken, mutta saan sen valmiiksi ennen torstain tuntia-
