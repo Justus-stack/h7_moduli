@@ -17,8 +17,9 @@ Aloitin projektin tekemällä salttiin moduulille kansion. Tein kansioon init.sl
 	    - pkgs:
 	      - curl
    	      - firefox
-              - tree
-              - git
+	      - tree
+	      - git
+	      
 	/etc/firefox/syspref.js:
   	  file.managed:
  	    - source: salt://projekti/syspref.js
