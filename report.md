@@ -79,11 +79,20 @@ Nämä komennot lisäävät spotifyn paketin linuxin paketinhallintajärjestelm�
 	
 ![kuva5](/images/kuva5.png)
 
-Spotifyn lisääminen salttiin. 
+Spotifyn lisääminen salttiin. Kopioin avaimen ja listan salttiin ja päivitin init.sls tiedostoa. 
+
+
+ajoin tilan mestarilla ja kaikki mitään ei muuttunut. 
+
+![kuva7](/images/kuva7.png)
 
 ## Moduulin kokeilu uudella koneella. 
 
+Asensin testejä varten uuden Ubuntu 20.04.1 virtuaalikoneen. Yhdistin koneen verkkoon ja asensin sille [salt-minionin](https://repo.saltproject.io/#ubuntu), jonka jälkeen osoitin masterin ja hyväksyin avaimen. Ajoin moduulin uuteen desktoppiin komennolla "sudo salt 'testdesktop' state.apply projekti".
 
+![kuva8](/images/kuva8.png)
+
+Moduuli ei 
 
 -tehtävä on hieman kesken, mutta saan sen valmiiksi ennen torstain tuntia- -kuvat ja pari osaa puuttuu-
 
