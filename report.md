@@ -54,13 +54,21 @@ Discordin asennus
 
 ![kuva4](/images/kuva5.png)
 
-Spotifyn asennus
+Asensin Spotifyn ensiksi käsin, jonka tekemiseen [käytin Spotifyn omilta sivuilta löytyvää ohjetta](https://www.spotify.com/fi/download/linux/) ja [Jesperikuulan tehtäväraporttia](https://jesperikuula.wordpress.com/palvelinten-hallinta-viikko-4/). Lisäsin spotify listan ja avaimen seuraavilla komennoilla.
 
+	curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
+	echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+	
+Nämä komennot lisäävät spotifyn paketin linuxin paketinhallintajärjestelmään. Seuraavaksi päivitetään pakettilista ja asennetaan spotify-client.
+
+	sudo apt update
+	sudo apt install spotify-client
+	
 [kuva5](/images/kuva6.png)
 
-Koko moduulin testaus uudella koneella.
 
-## Moduulin kokeilu. 
+
+## Moduulin kokeilu uudella koneella. 
 
 
 
