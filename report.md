@@ -71,3 +71,7 @@ Koko moduulin testaus uudella koneella.
 https://linuxconfig.org/how-to-install-discord-on-ubuntu-18-04-bionic-beaver-linux
 
 https://askubuntu.com/questions/506909/how-can-i-accept-the-lience-agreement-for-steam-prior-to-apt-get-install
+
+https://www.spotify.com/fi/download/linux/
+
+https://jesperikuula.wordpress.com/palvelinten-hallinta-viikko-4/
