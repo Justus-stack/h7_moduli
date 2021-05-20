@@ -64,3 +64,9 @@ Steamin asennus.
 Koko moduulin testaus uudella koneella.
 
 -tehtävä on hieman kesken, mutta saan sen valmiiksi ennen torstain tuntia- -kuvat ja pari osaa puuttuu-
+
+## Lähteet
+
+https://linuxconfig.org/how-to-install-discord-on-ubuntu-18-04-bionic-beaver-linux
+
+
