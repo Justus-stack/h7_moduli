@@ -52,15 +52,19 @@ Kun olin muuttanut asetuksia käytin find komentoa löytääkseni muutetut asetu
 	  file.managed:
 	    - source: salt://projekti/userpref.blend
 	    
-Discordin asennus.
+Discordin asennus
 
 ![kuva4](/images/kuva5.png)
 
-Steamin asennus.
+Spotifyn asennus
 
 [kuva5](/images/kuva6.png)
 
 Koko moduulin testaus uudella koneella.
+
+## Moduulin kokeilu. 
+
+
 
 -tehtävä on hieman kesken, mutta saan sen valmiiksi ennen torstain tuntia- -kuvat ja pari osaa puuttuu-
 
