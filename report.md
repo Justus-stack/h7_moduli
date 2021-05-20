@@ -64,7 +64,7 @@ N채m채 komennot lis채채v채t spotifyn paketin linuxin paketinhallintaj채rjestelm�
 	sudo apt update
 	sudo apt install spotify-client
 	
-[kuva5](/images/kuva6.png)
+![kuva5](/images/kuva6.png)
 
 
 
