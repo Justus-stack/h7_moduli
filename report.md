@@ -52,7 +52,7 @@ Kun olin muuttanut asetuksia käytin find komentoa löytääkseni muutetut asetu
 	    
 Discordin asennus
 
-![kuva4](/images/kuva5.png)
+![kuva4](/images/kuva6.png)
 
 Asensin Spotifyn ensiksi käsin, jonka tekemiseen [käytin Spotifyn omilta sivuilta löytyvää ohjetta](https://www.spotify.com/fi/download/linux/) ja [Jesperikuulan tehtäväraporttia](https://jesperikuula.wordpress.com/palvelinten-hallinta-viikko-4/). Lisäsin spotify listan ja avaimen seuraavilla komennoilla.
 
@@ -64,7 +64,7 @@ Nämä komennot lisäävät spotifyn paketin linuxin paketinhallintajärjestelm�
 	sudo apt update
 	sudo apt install spotify-client
 	
-![kuva5](/images/kuva6.png)
+![kuva5](/images/kuva5.png)
 
 
 
