@@ -50,7 +50,10 @@ Kun olin muuttanut asetuksia käytin find komentoa löytääkseni muutetut asetu
 	  file.managed:
 	    - source: salt://projekti/userpref.blend
 	    
-Discordin asennus
+Discordin asennus. Asensin Discordin ensin käsin. Latasin deb paketin curlilla home kansioon, jossa ajoin komennon, jolla pystyy asentaa deb paketin.
+
+	
+	sudo apt install ./discord deb
 
 ![kuva4](/images/kuva6.png)
 
@@ -76,9 +79,13 @@ Nämä komennot lisäävät spotifyn paketin linuxin paketinhallintajärjestelm�
 
 ## Lähteet
 
+Discordin asennus
+
 https://linuxconfig.org/how-to-install-discord-on-ubuntu-18-04-bionic-beaver-linux
 
-https://askubuntu.com/questions/506909/how-can-i-accept-the-lience-agreement-for-steam-prior-to-apt-get-install
+https://docs.saltproject.io/en/latest/ref/states/all/salt.states.cmd.html
+
+Spotify asennus
 
 https://www.spotify.com/fi/download/linux/
 
