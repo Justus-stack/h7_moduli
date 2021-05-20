@@ -118,6 +118,8 @@ Moduuli ei mennyt  testikoneella ensimmäisellä kerralla läpi, mutta tiesin he
 
 ![kuva8](/images/kuva10.png) ![kuva8](/images/kuva11.png)
 
+![kuva8](/images/kuva15.png)
+
 ![kuva8](/images/kuva12.png) ![kuva8](/images/kuva13.png)
 
 ![ls](/images/kuva14.png)
