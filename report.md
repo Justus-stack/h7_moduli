@@ -124,9 +124,7 @@ Moduuli ei mennyt  testikoneella ensimmäisellä kerralla läpi, mutta tiesin he
 
 ![kuva8](/images/kuva13.png)
 
-![kuva8](/images/kuva14.png)
-
-![ls](/images/kuva15.png)
+![ls](/images/kuva14.png)
 
 ## Lähteet
 
