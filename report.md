@@ -83,9 +83,20 @@ Nämä komennot lisäävät spotifyn paketin linuxin paketinhallintajärjestelm�
 
 Spotifyn lisääminen salttiin. Kopioin avaimen ja listan salttiin ja päivitin init.sls tiedostoa. Lista sijaitsi **/etc/apt/sources.list.d** kansiossa ja avaimet sijaitsivat **/etc/apt/trusted.gpg.d** kansiossa. Lisäsin init.sls tiedostoon file.managed avaimille ja listoille sekä lisäsin pkg.installed spotify-clientille.
 
-	
+	/etc/apt/trusted.gpg.d/ubuntu-keyring-2012-archive.gpg:
+	  file.managed:
+	    - source: salt://projekti/ubuntu-keyring-2012-archive.gpg
 
-ajoin tilan mestarilla ja mitään ei ollut muuttunut. 
+	/etc/apt/sources.list.d/spotify.list:
+	  file.managed:
+	    - source: salt://projekti/spotify.list
+
+	spotify:
+	  pkg.installed:
+	    - name: spotify-client
+	    - refresh: True
+
+ajoin tilan mestarilla ja mitään muutoksia tiedostoille tai asennukselle ei tapahtunut.
 
 ![kuva7](/images/kuva7.png)
 
