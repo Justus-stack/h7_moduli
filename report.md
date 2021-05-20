@@ -15,7 +15,7 @@ Aloitin projektin tekemällä salttiin moduulille kansion. Tein kansioon init.sl
 	tools:
 	  pkg.installed:
 	    - pkgs:
-       	      - curl
+	      - curl
    	      - firefox
               - tree
               - git
