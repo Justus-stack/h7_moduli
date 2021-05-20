@@ -63,7 +63,9 @@ Discordin asennus. Asensin Discordin ensin käsin. Latasin deb paketin curlilla 
 
 ![kuva4](/images/kuva6.png)
 
-discordin lisääminen salttiin. 
+discordin lisääminen salttiin. Lisäsin discordin asennuksen salttiin käyttämällä cmd.run curl ja lisäämällä siihen creates argumentin, jotta se ei ajaisi curlia joka kerta.  
+
+
 
 ## Spotify
 
@@ -79,10 +81,11 @@ Nämä komennot lisäävät spotifyn paketin linuxin paketinhallintajärjestelm�
 	
 ![kuva5](/images/kuva5.png)
 
-Spotifyn lisääminen salttiin. Kopioin avaimen ja listan salttiin ja päivitin init.sls tiedostoa. 
+Spotifyn lisääminen salttiin. Kopioin avaimen ja listan salttiin ja päivitin init.sls tiedostoa. Lista sijaitsi **/etc/apt/sources.list.d** kansiossa ja avaimet sijaitsivat **/etc/apt/trusted.gpg.d** kansiossa. Lisäsin init.sls tiedostoon file.managed avaimille ja listoille sekä lisäsin pkg.installed spotify-clientille.
 
+	
 
-ajoin tilan mestarilla ja kaikki mitään ei muuttunut. 
+ajoin tilan mestarilla ja mitään ei ollut muuttunut. 
 
 ![kuva7](/images/kuva7.png)
 
@@ -92,9 +95,9 @@ Asensin testejä varten uuden Ubuntu 20.04.1 virtuaalikoneen. Yhdistin koneen ve
 
 ![kuva8](/images/kuva8.png)
 
-Moduuli ei 
+Moduuli ei mennyt ensimmäisellä kerralla läpi, mutta tiesin, missä vika oli virheilmoituksen perusteella. Spotify ei ollut asentunut, koska sillä ei ollut avainta.
 
--tehtävä on hieman kesken, mutta saan sen valmiiksi ennen torstain tuntia- -kuvat ja pari osaa puuttuu-
+
 
 ## Lähteet
 
