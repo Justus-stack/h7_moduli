@@ -6,6 +6,8 @@
 
 Tein moduulin, jolla voin asentaa puhtaalle linuxille sovelluksia, joita käytän itse usein. Moduuli asentaa Firefoxin, Blenderin, Discordin ja Spotifyn. Moduuli myös muuttaa blenderissä teeman automaattisesti kaikille käyttäjille ja oletussivun firefoxiin. Ajattelin, että tästä projektista olisi hyötyä myöhemmin, jos päätän asentaa linux desktopin uudelleen. 
 
+## Firefox
+
 Aloitin projektin tekemällä salttiin moduulille kansion. Tein kansioon init.sls tiedoston, johon myöhemmin laitan kaiken tavaran. Aloitin asentamalla firefoxin käsin, jotta voisin kopioida konfigurointitiedoston, johon voin muuttaa oletussivun duckduckgo.com. Aloitin init.sls tiedoston täyttämisen asentamalla ensin firefoxin ja muutaman hyötyohjelman, joita tulen käyttämään myöhemmin. Laitoin myös tarvittavan koodin, jotta saan file.managedin toimimaan. Laitoin tässä vaiheessa sls tiedostoon seuraavan koodin.
 
 	tools:
@@ -25,6 +27,8 @@ Aloitin projektin tekemällä salttiin moduulille kansion. Tein kansioon init.sl
 Tässä vaiheessa kaikki toimi moitteetta. Testasin avata firefoxin ja duckduckgo.com aukesi niin kuin pitikin. 
 
 ![kuva1](/images/kuva3.png)
+
+## Blender
 
 Seuraavaksi asensin Blenderin ensin käsin, jotta voin muokata sen haluamakseni ja ottaa siitä tarvittavat konfigurointitiedostot. Asensin sen sudo apt install blender ja avasin sen. Vaihdoin taustaa tummemmaksi, koska se on minun mielestäni mukavampi. 
 
@@ -50,6 +54,8 @@ Kun olin muuttanut asetuksia käytin find komentoa löytääkseni muutetut asetu
 	  file.managed:
 	    - source: salt://projekti/userpref.blend
 	    
+## Discord
+
 Discordin asennus. Asensin Discordin ensin käsin. Latasin deb paketin curlilla home kansioon, jossa ajoin komennon, jolla pystyy asentaa deb paketin. Asennus onnistui.
 
 	curl -L -o /home/discord.deb https://discord.com/api/download?platform=linux&format=deb
@@ -58,6 +64,8 @@ Discordin asennus. Asensin Discordin ensin käsin. Latasin deb paketin curlilla 
 ![kuva4](/images/kuva6.png)
 
 discordin lisääminen salttiin. 
+
+## Spotify
 
 Asensin Spotifyn ensiksi käsin, jonka tekemiseen [käytin Spotifyn omilta sivuilta löytyvää ohjetta](https://www.spotify.com/fi/download/linux/) ja [Jesperikuulan tehtäväraporttia](https://jesperikuula.wordpress.com/palvelinten-hallinta-viikko-4/). Lisäsin spotify listan ja avaimen seuraavilla komennoilla.
 
