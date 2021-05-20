@@ -116,13 +116,9 @@ Asensin testejä varten uuden Ubuntu 20.04.1 virtuaalikoneen. Yhdistin koneen ve
 
 Moduuli ei mennyt  testikoneella ensimmäisellä kerralla läpi, mutta tiesin heti missä vika oli virheilmoituksen perusteella. Spotify ei ollut asentunut, koska sillä ei ollut avainta. Tämä johtuu siitä, että se ei ollut lisännyt avainta, koska sillä oli valmiiksi samanlainen avaimenperä tiedosto, jota yritin antaa sille. Poistin avaimen testikoneeltani ja ajoin tilan uudelleen. Tällä kertaa kaikki meni läpi ja testasin, että toimiiko kaikki sovellukset, jotka asensin. 
 
-![kuva8](/images/kuva10.png)
+![kuva8](/images/kuva10.png) ![kuva8](/images/kuva11.png)
 
-![kuva8](/images/kuva11.png)
-
-![kuva8](/images/kuva12.png)
-
-![kuva8](/images/kuva13.png)
+![kuva8](/images/kuva12.png) ![kuva8](/images/kuva13.png)
 
 ![ls](/images/kuva14.png)
 
