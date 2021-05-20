@@ -50,12 +50,14 @@ Kun olin muuttanut asetuksia käytin find komentoa löytääkseni muutetut asetu
 	  file.managed:
 	    - source: salt://projekti/userpref.blend
 	    
-Discordin asennus. Asensin Discordin ensin käsin. Latasin deb paketin curlilla home kansioon, jossa ajoin komennon, jolla pystyy asentaa deb paketin.
+Discordin asennus. Asensin Discordin ensin käsin. Latasin deb paketin curlilla home kansioon, jossa ajoin komennon, jolla pystyy asentaa deb paketin. Asennus onnistui.
 
-	
-	sudo apt install ./discord deb
+	curl -L -o /home/discord.deb https://discord.com/api/download?platform=linux&format=deb
+	sudo apt install /home/discord.deb
 
 ![kuva4](/images/kuva6.png)
+
+discordin lisääminen salttiin. 
 
 Asensin Spotifyn ensiksi käsin, jonka tekemiseen [käytin Spotifyn omilta sivuilta löytyvää ohjetta](https://www.spotify.com/fi/download/linux/) ja [Jesperikuulan tehtäväraporttia](https://jesperikuula.wordpress.com/palvelinten-hallinta-viikko-4/). Lisäsin spotify listan ja avaimen seuraavilla komennoilla.
 
@@ -69,7 +71,7 @@ Nämä komennot lisäävät spotifyn paketin linuxin paketinhallintajärjestelm�
 	
 ![kuva5](/images/kuva5.png)
 
-
+Spotifyn lisääminen salttiin. 
 
 ## Moduulin kokeilu uudella koneella. 
 
