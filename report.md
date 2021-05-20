@@ -63,7 +63,7 @@ Discordin asennus. Asensin Discordin ensin käsin. Latasin deb paketin curlilla 
 
 ![kuva4](/images/kuva6.png)
 
-discordin lisääminen salttiin. Lisäsin discordin asennuksen salttiin käyttämällä cmd.run curl ja lisäämällä siihen creates argumentin, jotta se ei ajaisi curlia joka kerta.  
+discordin lisääminen salttiin. Lisäsin discordin asennuksen salttiin käyttämällä cmd.run curl ja lisäämällä siihen creates argumentin, jotta se ei ajaisi curlia joka kerta, jos discord.deb on jo olemassa.  
 
 	Discord:
 	  cmd.run:
@@ -72,6 +72,8 @@ discordin lisääminen salttiin. Lisäsin discordin asennuksen salttiin käyttä
 	pkg.installed:
 	  - sources:
 	    - discord: /home/discord.deb
+	    
+![kuva9](/images/kuva9.png)
 
 ## Spotify
 
@@ -112,9 +114,19 @@ Asensin testejä varten uuden Ubuntu 20.04.1 virtuaalikoneen. Yhdistin koneen ve
 
 ![kuva8](/images/kuva8.png)
 
-Moduuli ei mennyt ensimmäisellä kerralla läpi, mutta tiesin, missä vika oli virheilmoituksen perusteella. Spotify ei ollut asentunut, koska sillä ei ollut avainta.
+Moduuli ei mennyt  testikoneella ensimmäisellä kerralla läpi, mutta tiesin heti missä vika oli virheilmoituksen perusteella. Spotify ei ollut asentunut, koska sillä ei ollut avainta. Tämä johtuu siitä, että se ei ollut lisännyt avainta, koska sillä oli valmiiksi samanlainen avaimenperä tiedosto, jota yritin antaa sille. Poistin avaimen testikoneeltani ja ajoin tilan uudelleen. Tällä kertaa kaikki meni läpi ja testasin, että toimiiko kaikki sovellukset, jotka asensin. 
 
+![kuva8](/images/kuva10.png)
 
+![kuva8](/images/kuva11.png)
+
+![kuva8](/images/kuva12.png)
+
+![kuva8](/images/kuva13.png)
+
+![kuva8](/images/kuva14.png)
+
+![ls](/images/kuva15.png)
 
 ## Lähteet
 
