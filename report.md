@@ -65,7 +65,13 @@ Discordin asennus. Asensin Discordin ensin käsin. Latasin deb paketin curlilla 
 
 discordin lisääminen salttiin. Lisäsin discordin asennuksen salttiin käyttämällä cmd.run curl ja lisäämällä siihen creates argumentin, jotta se ei ajaisi curlia joka kerta.  
 
-
+	Discord:
+	  cmd.run:
+	    - name: curl -L -o /home/discord.deb https://discord.com/api/download?platform=linux&format=deb
+	    - creates: /home/discord.deb
+	pkg.installed:
+	  - sources:
+	    - discord: /home/discord.deb
 
 ## Spotify
 
